@@ -1,11 +1,11 @@
 {
-    "name": "org_fair",
-    "short_name": "org_fair",
+    "name": "CICT Org Fair",
+    "short_name": "Org Fair",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Find student organizations, events, and activities at the CICT Org Fair.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

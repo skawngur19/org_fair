@@ -44,14 +44,7 @@ jobs:
           CMS_DATASET=$(printf '%s' "$CMS_DATASET" | tr -d '\r\n')
           CMS_TOKEN=$(printf '%s' "$CMS_TOKEN" | tr -d '\r\n')
 
-          flutter build web --release \
-            --base-href "/${{ github.event.repository.name }}/" \
-            --dart-define="CMS=$CMS" \
-            --dart-define="CMS_URL=$CMS_URL" \
-            --dart-define="CMS_SPACE=$CMS_SPACE" \
-            --dart-define="CMS_PROJECT=$CMS_PROJECT" \
-            --dart-define="CMS_DATASET=$CMS_DATASET" \
-            --dart-define="CMS_TOKEN=$CMS_TOKEN"
+          flutter build web --release --base-href "/${{ github.event.repository.name }}/" --dart-define="CMS=$CMS" --dart-define="CMS_URL=$CMS_URL" --dart-define="CMS_SPACE=$CMS_SPACE" --dart-define="CMS_PROJECT=$CMS_PROJECT" --dart-define="CMS_DATASET=$CMS_DATASET" --dart-define="CMS_TOKEN=$CMS_TOKEN"
 
       - uses: actions/configure-pages@v5
 
