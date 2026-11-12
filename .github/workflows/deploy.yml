@@ -37,6 +37,13 @@ jobs:
           CMS_DATASET: ${{ vars.CMS_DATASET }}
           CMS_TOKEN: ${{ secrets.CMS_TOKEN }}
         run: |
+          CMS=$(printf '%s' "$CMS" | tr -d '\r\n')
+          CMS_URL=$(printf '%s' "$CMS_URL" | tr -d '\r\n')
+          CMS_SPACE=$(printf '%s' "$CMS_SPACE" | tr -d '\r\n')
+          CMS_PROJECT=$(printf '%s' "$CMS_PROJECT" | tr -d '\r\n')
+          CMS_DATASET=$(printf '%s' "$CMS_DATASET" | tr -d '\r\n')
+          CMS_TOKEN=$(printf '%s' "$CMS_TOKEN" | tr -d '\r\n')
+
           flutter build web --release \
             --base-href "/${{ github.event.repository.name }}/" \
             --dart-define="CMS=$CMS" \
