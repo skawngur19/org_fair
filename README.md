@@ -1,6 +1,8 @@
-# org_fair
+# CICT Org Fair
 
-A new Flutter project.
+Live site: https://skawngur19.github.io/org_fair/
+
+Flutter app for exploring CICT student organizations and fair events.
 
 ## Getting Started
 

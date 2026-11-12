@@ -1,0 +1,8 @@
+{
+  "CMS": "contentful",
+  "CMS_URL": "",
+  "CMS_SPACE": "your-contentful-space-id",
+  "CMS_PROJECT": "",
+  "CMS_DATASET": "",
+  "CMS_TOKEN": "your-read-only-content-delivery-token"
+}
